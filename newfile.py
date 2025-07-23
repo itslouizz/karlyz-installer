@@ -62,43 +62,43 @@ def select_os(tool):
 
 def tools_menu():
     tools = {
-        "1": "nmap",                "15": "gobuster",
-        "2": "metasploit-framework", "16": "wifite",
-        "3": "wireshark",           "17": "reaver",
-        "4": "burpsuite",           "18": "yersinia",
-        "5": "john",                "19": "openvas",
-        "6": "hydra",               "20": "bloodhound",
-        "7": "sqlmap",              "21": "crackmapexec",
-        "8": "aircrack-ng",         "22": "impacket-scripts",
-        "9": "nikto",               "23": "sherlock",
-        "10": "maltego",            "24": "dnsenum",
-        "11": "theharvester",       "25": "routersploit",
-        "12": "responder",          "26": "maxphisher",
-        "13": "setoolkit",          "27": "zphisher",
-        "14": "commix",             "28": "gophish"
+        "1": "nmap",                "15": "gobuster",           "29": "hashcat",
+        "2": "metasploit-framework", "16": "wifite",             "30": "feroxbuster",
+        "3": "wireshark",           "17": "reaver",             "31": "ghidra",
+        "4": "burpsuite",           "18": "yersinia",           "32": "binwalk",
+        "5": "john",                "19": "openvas",            "33": "stegseek",
+        "6": "hydra",               "20": "bloodhound",         "34": "stegcracker",
+        "7": "sqlmap",              "21": "crackmapexec",       "35": "fcrackzip",
+        "8": "aircrack-ng",         "22": "impacket-scripts",   "36": "hashid",
+        "9": "nikto",               "23": "sherlock",           "37": "netcat",
+        "10": "maltego",            "24": "dnsenum",            "38": "socat",
+        "11": "theharvester",       "25": "routersploit",       "39": "enum4linux",
+        "12": "responder",          "26": "maxphisher",         "40": "smbclient",
+        "13": "setoolkit",          "27": "zphisher",           "41": "wfuzz",
+        "14": "commix",             "28": "gophish",            "42": "dirb"
     }
     while True:
         clear()
         choice = input("""\033[31mKarlyz Installer v1 | itslouizz on github
 --
-[1] Nmap               [15] Gobuster
-[2] Metasploit         [16] Wifite
-[3] Wireshark          [17] Reaver
-[4] Burp Suite         [18] Yersinia
-[5] John the Ripper    [19] OpenVAS
-[6] Hydra              [20] BloodHound
-[7] SQLmap             [21] CrackMapExec
-[8] Aircrack-ng       [22] Impacket
-[9] Nikto              [23] Sherlock
-[10] Maltego           [24] DNSenum
-[11] TheHarvester      [25] RouterSploit
-[12] Responder         [26] MaxPhisher
-[13] SEToolkit         [27] Zphisher
-[14] Commix            [28] GoPhish
-[29] Back
+[1] Nmap               [15] Gobuster           [29] Hashcat
+[2] Metasploit         [16] Wifite             [30] Feroxbuster
+[3] Wireshark          [17] Reaver             [31] Ghidra
+[4] Burp Suite         [18] Yersinia           [32] Binwalk
+[5] John the Ripper    [19] OpenVAS            [33] Stegseek
+[6] Hydra              [20] BloodHound         [34] Stegcracker
+[7] SQLmap             [21] CrackMapExec       [35] Fcrackzip
+[8] Aircrack-ng        [22] Impacket           [36] Hashid
+[9] Nikto              [23] Sherlock           [37] Netcat
+[10] Maltego           [24] DNSenum            [38] Socat
+[11] TheHarvester      [25] RouterSploit       [39] Enum4linux
+[12] Responder         [26] MaxPhisher         [40] Smbclient
+[13] SEToolkit         [27] Zphisher           [41] Wfuzz
+[14] Commix            [28] GoPhish            [42] Dirb
+[43] Back
 ~~> \033[0m""")
         
-        if choice == "29":
+        if choice == "43":
             break
         elif choice in tools:
             select_os(tools[choice])
