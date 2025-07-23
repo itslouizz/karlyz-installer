@@ -62,43 +62,43 @@ def select_os(tool):
 
 def tools_menu():
     tools = {
-        "1": "nmap",                "15": "gobuster",           "29": "hashcat",
-        "2": "metasploit-framework", "16": "wifite",             "30": "feroxbuster",
-        "3": "wireshark",           "17": "reaver",             "31": "ghidra",
-        "4": "burpsuite",           "18": "yersinia",           "32": "binwalk",
-        "5": "john",                "19": "openvas",            "33": "stegseek",
-        "6": "hydra",               "20": "bloodhound",         "34": "stegcracker",
-        "7": "sqlmap",              "21": "crackmapexec",       "35": "fcrackzip",
-        "8": "aircrack-ng",         "22": "impacket-scripts",   "36": "hashid",
-        "9": "nikto",               "23": "sherlock",           "37": "netcat",
-        "10": "maltego",            "24": "dnsenum",            "38": "socat",
-        "11": "theharvester",       "25": "routersploit",       "39": "enum4linux",
-        "12": "responder",          "26": "maxphisher",         "40": "smbclient",
-        "13": "setoolkit",          "27": "zphisher",           "41": "wfuzz",
-        "14": "commix",             "28": "gophish",            "42": "dirb"
+        "1": "nmap",                "15": "gobuster",           "29": "hashcat",            "43": "sublist3r",
+        "2": "metasploit-framework", "16": "wifite",             "30": "feroxbuster",        "44": "amass",
+        "3": "wireshark",           "17": "reaver",             "31": "ghidra",             "45": "whatweb",
+        "4": "burpsuite",           "18": "yersinia",           "32": "binwalk",            "46": "wpscan",
+        "5": "john",                "19": "openvas",            "33": "stegseek",           "47": "joomscan",
+        "6": "hydra",               "20": "bloodhound",         "34": "stegcracker",        "48": "droopescan",
+        "7": "sqlmap",              "21": "crackmapexec",       "35": "fcrackzip",          "49": "snmp-check",
+        "8": "aircrack-ng",         "22": "impacket-scripts",   "36": "hashid",             "50": "onesixtyone",
+        "9": "nikto",               "23": "sherlock",           "37": "netcat",             "51": "braa",
+        "10": "maltego",            "24": "dnsenum",            "38": "socat",              "52": "cewl",
+        "11": "theharvester",       "25": "routersploit",       "39": "enum4linux",         "53": "crunch",
+        "12": "responder",          "26": "maxphisher",         "40": "smbclient",          "54": "cupp",
+        "13": "setoolkit",          "27": "zphisher",           "41": "wfuzz",              "55": "evil-winrm",
+        "14": "commix",             "28": "gophish",            "42": "dirb",               "56": "rdesktop"
     }
     while True:
         clear()
         choice = input("""\033[31mKarlyz Installer v1 | itslouizz on github
 --
-[1] Nmap               [15] Gobuster           [29] Hashcat
-[2] Metasploit         [16] Wifite             [30] Feroxbuster
-[3] Wireshark          [17] Reaver             [31] Ghidra
-[4] Burp Suite         [18] Yersinia           [32] Binwalk
-[5] John the Ripper    [19] OpenVAS            [33] Stegseek
-[6] Hydra              [20] BloodHound         [34] Stegcracker
-[7] SQLmap             [21] CrackMapExec       [35] Fcrackzip
-[8] Aircrack-ng        [22] Impacket           [36] Hashid
-[9] Nikto              [23] Sherlock           [37] Netcat
-[10] Maltego           [24] DNSenum            [38] Socat
-[11] TheHarvester      [25] RouterSploit       [39] Enum4linux
-[12] Responder         [26] MaxPhisher         [40] Smbclient
-[13] SEToolkit         [27] Zphisher           [41] Wfuzz
-[14] Commix            [28] GoPhish            [42] Dirb
-[43] Back
+[1] Nmap               [15] Gobuster           [29] Hashcat            [43] Sublist3r
+[2] Metasploit         [16] Wifite             [30] Feroxbuster        [44] Amass
+[3] Wireshark          [17] Reaver             [31] Ghidra             [45] WhatWeb
+[4] Burp Suite         [18] Yersinia           [32] Binwalk            [46] WPScan
+[5] John the Ripper    [19] OpenVAS            [33] Stegseek           [47] Joomscan
+[6] Hydra              [20] BloodHound         [34] Stegcracker        [48] Droopescan
+[7] SQLmap             [21] CrackMapExec       [35] Fcrackzip          [49] SNMP-Check
+[8] Aircrack-ng        [22] Impacket           [36] Hashid             [50] Onesixyone
+[9] Nikto              [23] Sherlock           [37] Netcat             [51] Braa
+[10] Maltego           [24] DNSenum            [38] Socat              [52] CeWL
+[11] TheHarvester      [25] RouterSploit       [39] Enum4linux         [53] Crunch
+[12] Responder         [26] MaxPhisher         [40] Smbclient          [54] Cupp
+[13] SEToolkit         [27] Zphisher           [41] Wfuzz              [55] Evil-WinRM
+[14] Commix            [28] GoPhish            [42] Dirb               [56] Rdesktop
+[57] Back
 ~~> \033[0m""")
         
-        if choice == "43":
+        if choice == "57":
             break
         elif choice in tools:
             select_os(tools[choice])
